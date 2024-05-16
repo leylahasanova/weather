@@ -81,7 +81,11 @@
     margin: 0;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
 
 #cityList li {
     color: white;
@@ -89,6 +93,10 @@
     width: 18%;
     padding: 20px;
     background-color: rgba(173, 54, 203, 1);
-    border-radius: 10px;
-    
+    border-radius: 10px;    
+}
+@media screen and (max-width: 768px) {
+    #cityList li {
+        width: 30%; 
+    }
 }
